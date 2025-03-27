@@ -10,6 +10,14 @@ from utils.token_counter import count_tokens
 
 def main():
     st.title("LLM Token Counter")
+    
+    # Create columns for centering the image
+    col1, col2, col3 = st.columns([1, 2, 1])
+    
+    with col2:
+        # Display the logo image (smaller and centered)
+        st.image("images/token-counter.png", width=200)  # Adjust width as needed to make it 4x smaller
+    
     st.write("Upload a document to count tokens according to different LLM tokenization schemes.")
     
     uploaded_file = st.file_uploader("Choose a file", type=['pdf', 'txt', 'docx'])

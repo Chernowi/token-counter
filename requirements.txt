@@ -3,6 +3,4 @@ PyPDF2
 python-docx
 tiktoken
 transformers
-torch
 pandas
-pytest
